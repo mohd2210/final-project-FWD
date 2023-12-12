@@ -1,0 +1,467 @@
+
+/* Typography
+--------------------------------------------- */
+body {
+	font-family: 'Roboto Condensed', 'Times New Roman', Times, serif, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Condensed', 'Times New Roman', Times, serif, "Helvetica Neue", Helvetica, sans-serif;
+	
+}
+
+/* Header
+--------------------------------------------- */
+
+.logo {
+    max-width: 150px;
+}
+
+header {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    padding: 10px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img, 
+.row-nav li {
+    opacity: 100%;
+}
+
+/* Nav
+--------------------------------------------- */
+
+nav {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    background-color: #0B29CF;   
+}
+
+nav.activated {
+    transition: height 0.3s ease, visibility 0s 0.3s;
+}
+
+.show nav {
+    transition: height 0.3s ease, visibility 0s;
+    visibility: visible;
+    height: 253px;
+}
+
+nav ul {
+    /* padding: 0; */
+    /* margin: 0; */
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 1.2em;
+    display: block;
+    border-right: none;
+    color: white;
+    border-bottom: none;
+    border-top: 2px solid #8A95d0;
+    line-height: 40px;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+    outline: none;
+    background-color: rgba(255,255,255, 0.3);
+}
+
+/* Hamburger Styles */
+.btn-menu {
+    margin: 0 20px 20px 0;
+    display: block;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.btn-menu .button-content {
+    display: block;
+    height: 24px;
+    cursor: pointer;
+}
+
+.btn-menu .text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.btn-menu .bar {
+    display: block;
+    height: 4px;
+    background-color: blue;
+    width: 100%;
+    position: relative;
+    top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-menu .bar:before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    top: 10px;
+    left: 0;
+    background-color: blue;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-menu .bar:after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    top: -10px;
+    left: 0;
+    background-color: blue;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-menu:focus {
+    outline: none;
+}
+
+.btn-menu:focus .button-content {
+    outline: 5px solid #7683C9;
+}
+
+.show .btn-menu .bar {
+    background-color: transparent;	
+}
+
+.show .btn-menu .bar:before {
+    top: 0;
+    transform: rotate(45deg);	
+}
+
+.show .btn-menu .bar:after {
+    top: 0;
+    transform: rotate(-45deg);	
+}
+
+@media (min-width: 560px){
+
+    header {
+        background-color: transparent;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+    
+    .row-nav {
+        background-color: black;
+        visibility: visible;
+        height: auto;
+        max-width: 900px;
+    }
+    
+    .row-nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+        /* align-items: center; */
+    }
+    
+    .row-nav li {
+        flex: 1;
+    }
+    
+    .row-nav a {
+        color: white;
+        text-decoration: none;
+        border-top: none;
+        text-align: center;
+    }
+    
+    /* nav a:hover,
+    nav a:active,
+    nav a:focus {
+        outline: none;
+    } */
+ 
+}
+
+/* Top Opts
+--------------------------------------------- */
+#top-opts a {
+    display: none; 
+}
+
+@media (min-width: 50em) {
+
+    #top-opts {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 0px;
+        /* gap: 50px; */
+    }
+
+	#top-opts a {
+        color: white;
+		display: block;
+        text-decoration: none;
+        padding: 10px;
+	}
+
+    /* #top-opts .move {
+        justify-content: flex-end;
+    } */
+	
+}
+
+/* Slideshow Banner
+--------------------------------------------- */
+/* View Products & View Services */
+
+.slideshow-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slideshow-banner a {
+    text-decoration: none;
+    border: white solid 2px;
+    padding: 2px 15px;
+    display: inline-block;
+}
+
+.slideshow-banner h1 {
+    text-transform: uppercase;
+    color: white;
+    max-width: 400px;
+    text-align: center;
+    justify-items: center;
+}
+
+.banner-links {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.banner-links a {
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+
+@media (min-width: 50em) { 
+    .banner-links {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .slideshow-banner h1 {
+        max-width: 1000px;
+    }
+}
+
+/* .slideshow-banner {
+	position: relative;
+}
+
+.slideshow-banner h1 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	transform: translateY(-50%);
+	margin: 0;
+	font-size: 3rem;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.slideshow-banner img {
+	display: block;
+	object-fit: cover;
+	min-height: 25rem;
+} */
+
+.slideshow img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: absolute;
+  top: 0px;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+/* Hide the images by default */
+.slideshow {
+  display: none;
+}
+
+/* The dots */
+
+.dots {
+    z-index: 1;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: blue;
+}
+
+/* Fading animation  */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+} 
+
+/* Tutorial */
+/* www.w3schools.com/howto/howto_js_slideshow.asp */
+
+@media (min-width: 50em) {
+
+	.slideshow-banner h1 {
+		font-size: 5rem;
+	}
+	
+}
+
+
+/* Customized Order 
+--------------------------------------------- */
+
+.per-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.per-order h2 {
+    max-width: 100px;
+    font-weight: lighter;
+    align-self: center;
+}
+
+.per-order p {
+    max-width: 300px;
+    align-self: center;
+}
+
+.customized-wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product {
+    display: flex;
+    padding: 20px 0px;
+    padding-left: 50px;
+    border-bottom: lightgrey solid 2px;
+}
+
+.product-name {
+    font-size: larger;
+    align-self: center;
+    max-width: 100px;
+    margin-left: 20px;
+}
+
+.product-link {
+    display: none;
+}
+
+@media (min-width: 50em) {
+
+	.per-order h2 {
+        max-width: 400px;
+        align-self: center;
+    }
+    
+    .per-order p {
+        max-width: 725px;
+        align-self: center;
+    }
+
+    .customized-wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .product {
+        flex-direction: column;
+        border-bottom: 2px;
+        padding: 10px;
+    }
+    
+    .product-name {
+        color: blue;
+        font-size: larger;
+        text-align: center;
+        max-width: 100px;
+    }
+    
+    .product-link {
+        color: black;
+        text-align: center;
+        display: block;
+    }
+	
+}

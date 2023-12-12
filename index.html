@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulcan</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/my-styles.css">
+
+    <!-- brandon and muhammad css -->
+    <link rel="stylesheet" href="styles/bandon-muhammad.css">
+
+    
+    <!-- custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="site-wrapper">
+
+        <header>
+             <a class="logo" href="#0"><img src="images/logo-white-vulcan.svg" alt="vulcan: the proven screen choice"></a>
+            <button class="btn-menu" id="'btn-menu">
+                <span class="button-content" tabindex="-1">
+                    <span class="text">Menu</span>
+                    <span class="bar" id="bar"></span>
+                </span>
+            </button>
+            <!-- Mobile Nav -->
+            <nav id="mobile-nav">
+                <ul>
+                    <li><a href="#0">About</a></li>
+                    <li><a href="#0">Products</a></li>
+                    <li><a href="#0">Services</a></li>
+                    <li><a href="#0">Parts</a></li>
+                    <li><a href="#0">News</a></li>
+                    <li><a href="#0">Contact</a></li>
+                    <li><a href="#0">Install Map</a></li>
+					<li><a href="#0">Product Literature</a></li>
+                </ul>
+            </nav>
+            <!-- Desktop & Tablet Nav -->
+            <nav class="row-nav">
+                <ul>
+                    <li><a href="#0">About</a></li>
+                    <li><a href="#0">Products</a></li>
+                    <li><a href="#0">Services</a></li>
+                    <li><a href="#0">Parts</a></li>
+                    <li><a href="#0">News</a></li>
+                    <li><a href="#0">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Top Opts -->
+        <span id="top-opts">
+            <a href="#">Install Map</a>
+            <a href="#">Product Literature</a>
+            <a href="#" class="move">+1 712-642-2755</a>
+            <a href="#" class="move">Contact Us</a>
+        </span>
+
+        <!-- Slideshow Banner-->
+        <section class="slideshow-banner">
+            <h1>We design and fabricate indestructible wastewater screens. Enough said.</h1>
+            <div class="banner-links">
+                <a href="#">View Products</a>
+                <a href="#">View Services</a>
+            </div>
+
+            <div class="slideshow-container">
+                <!-- images -->
+                <div class="slideshow fade">
+                    <img src="images/header-slider-img-01.jpg" alt="machinery">
+                </div>
+                <div class="slideshow fade">
+                    <img src="images/header-slider-img-02.jpg" alt="person wearing a welding mask">
+                </div>
+                <div class="slideshow fade">
+                    <img src="images/header-slider-img-03.jpg" alt="two people working on metal">
+                </div>
+                <!-- Tutorial
+                www.w3schools.com/howto/howto_js_slideshow.asp -->
+                <!-- circles -->
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+        </section>
+
+        <main class="site-main">
+
+            <!-- Customized Per Order - Section -->
+            <section class="customized-section">
+
+                <img src="images/wave-white.png" alt="white wave">
+
+                <div class="per-order">
+                    <h2>Customized Per Order</h2>
+                    <p>Just as no two treatment plants are the same, no two of our screening, grit handling or sludge thickening products are either. We'll help determine exactly what you need.</p>
+                </div>
+
+                <div class="customized-wrapper">
+
+                    <article class="product">
+                        <img class="product-image" 
+                                src="images/machine-01-300x274.png" 
+                                alt="Screening Machinery"
+                                srcset="images/machine-01-912x834.png 912w,
+                                        images/machine-01-768x702.png 768w,
+                                        images/machine-01-300x274.png 300w"
+                                sizes="(max-width: 500px) calc(50vw - 10px),
+                                        (max-width: 1024px) calc(25vw - 10px), 300px">
+                        <h3 class="product-name">Screening</h3>
+                        <a class="product-link" href="#">View Selection</a>
+                    </article>
+
+                    <article class="product">
+                        <img class="product-image" 
+                                src="images/machine-02-300x274.png" 
+                                alt="Screenings Handling Machinery"
+                                srcset="images/machine-02-912x834.png 912w,
+                                        images/machine-02-768x702.png 768w,
+                                        images/machine-02-300x274.png 300w"
+                                sizes="(max-width: 500px) calc(50vw - 10px),
+                                        (max-width: 1024px) calc(25vw - 10px), 300px">
+                        <h3 class="product-name">Screenings Handling</h3>
+                        <a class="product-link" href="#">View Selection</a>
+                    </article>
+
+                    <article class="product">
+                        <img class="product-image" 
+                                src="images/machine-03-300x274.png" 
+                                alt="Grit Handling Machinery"
+                                srcset="images/machine-03-912x834.png 912w,
+                                        images/machine-03-768x702.png 768w,
+                                        images/machine-03-300x274.png 300w"
+                                sizes="(max-width: 500px) calc(50vw - 10px),
+                                        (max-width: 1024px) calc(25vw - 10px), 300px">
+                        <h3 class="product-name">Grit Handling</h3>
+                        <a class="product-link" href="#">View Selection</a>
+                    </article>
+
+                    <article class="product">
+                        <img class="product-image" 
+                                src="images/machine-04-300x274.png" 
+                                alt="Sludge Thickening Machinery"
+                                srcset="images/machine-04-912x834.png 912w,
+                                        images/machine-04-768x702.png 768w,
+                                        images/machine-04-300x274.png 300w"
+                                sizes="(max-width: 500px) calc(50vw - 10px),
+                                        (max-width: 1024px) calc(25vw - 10px), 300px">
+                        <h3 class="product-name">Sludge Thickening</h3>
+                        <a class="product-link" href="#">View Selection</a>
+                    </article>
+
+                </div>
+
+            </section>
+<!-- brandons section brandons section brandons section brandons section  -->
+            <div class="site-wrapper">
+                <section class="product-selection">
+                  <div class="back-ground-dark-blue">
+                      <h2>Product Advisor</h2>
+                      <img class= 'dark-wave' src="./images/wave-blue-dark.png" alt="blue wave design for products">
+                          <p>Find your project's perfect fit</p>
+          
+                      <div class="master-type">
+                          <div class="product-type">
+                              <label for="product-type">Product Type</label>
+                              <select name="product-type" id="product-type">
+                                <option value="" disabled selected>Select</option>
+                                <optgroup label="Filtered Water">
+                                  <option value="Salt Water">Salt Water</option>
+                                  <option value="Fresh Water">Fresh Water</option>
+                                </optgroup>
+                  
+                                <optgroup label="Unfiltered Water">
+                                  <option value="Salt Water">Salt Water</option>
+                                  <option value="Fresh Water">Fresh Water</option>
+                                </optgroup>
+                  
+                                <optgroup label="Some What Filtered Water">
+                                  <option value="Salt Water">Salt Water</option>
+                                  <option value="Fresh Water">Fresh Water</option>
+                                </optgroup>
+                                </select>
+                                  </div>
+          
+                                  <div class="product-type">
+                                  <label for="product-type">Screen Location</label>
+                                  <select name="product-type" id="product-type">
+                                    <option value="" disabled selected>Select</option>
+                                    <optgroup label="Filtered Water">
+                                      <option value="Salt Water">Salt Water</option>
+                                      <option value="Fresh Water">Fresh Water</option>
+                                    </optgroup>
+                      
+                                    <optgroup label="Unfiltered Water">
+                                      <option value="Salt Water">Salt Water</option>
+                                      <option value="Fresh Water">Fresh Water</option>
+                                    </optgroup>
+                      
+                                    <optgroup label="Some What Filtered Water">
+                                      <option value="Salt Water">Salt Water</option>
+                                      <option value="Fresh Water">Fresh Water</option>
+                                    </optgroup>
+                                    </select>
+                                  </div>
+          
+                                  <div class="product-type">
+                                      <label for="product-type">Flow Type</label>
+                                      <select name="product-type" id="product-type">
+                                        <option value="" disabled selected>Select</option>
+                                        <optgroup label="Filtered Water">
+                                          <option value="Salt Water">Salt Water</option>
+                                          <option value="Fresh Water">Fresh Water</option>
+                                        </optgroup>
+                          
+                                        <optgroup label="Unfiltered Water">
+                                          <option value="Salt Water">Salt Water</option>
+                                          <option value="Fresh Water">Fresh Water</option>
+                                        </optgroup>
+                          
+                                        <optgroup label="Some What Filtered Water">
+                                          <option value="Salt Water">Salt Water</option>
+                                          <option value="Fresh Water">Fresh Water</option>
+                                        </optgroup>
+                                        </select>
+                                      </div>
+                                      
+                                      <div class="product-type">
+                                          <label for="product-type">Channel Depth</label>
+                                          <select name="product-type" id="product-type">
+                                            <option value="" disabled selected>Select</option>
+                                            <optgroup label="Filtered Water">
+                                              <option value="Salt Water">Salt Water</option>
+                                              <option value="Fresh Water">Fresh Water</option>
+                                            </optgroup>
+                              
+                                            <optgroup label="Unfiltered Water">
+                                              <option value="Salt Water">Salt Water</option>
+                                              <option value="Fresh Water">Fresh Water</option>
+                                            </optgroup>
+                              
+                                            <optgroup label="Some What Filtered Water">
+                                              <option value="Salt Water">Salt Water</option>
+                                              <option value="Fresh Water">Fresh Water</option>
+                                            </optgroup>
+                                            </select>
+                                          </div>
+          
+                                          
+                                          <div class="product-type">
+                                              <label for="product-type">Channel Width</label>
+                                              <select name="product-type" id="product-type">
+                                                <option value="" disabled selected>Select</option>
+                                                <optgroup label="Filtered Water">
+                                                  <option value="Salt Water">Salt Water</option>
+                                                  <option value="Fresh Water">Fresh Water</option>
+                                                </optgroup>
+                                  
+                                                <optgroup label="Unfiltered Water">
+                                                  <option value="Salt Water">Salt Water</option>
+                                                  <option value="Fresh Water">Fresh Water</option>
+                                                </optgroup>
+                                  
+                                                <optgroup label="Some What Filtered Water">
+                                                  <option value="Salt Water">Salt Water</option>
+                                                  <option value="Fresh Water">Fresh Water</option>
+                                                </optgroup>
+                                                </select>
+                                              </div>
+                                             
+                                                  
+                                                  <button>Find My Product</button>
+                                                    
+                          </section>
+                          </div>
+                          
+                          <!-- button for tablet size version. -->
+                          <div class="button-background">
+                          <button class="button-find">Find My Product</button>
+                        </div>
+          
+              <section class="about-us">
+                  <img src="images/bg-section-about-us.jpg" alt="about us section delivering clean waters since 1975">
+                  <div class ='about-info'>
+                      <h2>Delivering Clean, Safe Water <span>Since 1975. Refreshing Indeed.</span></h2>
+          
+                          <p>Vulcan wastewater screening equipment has played a vital role in protecting the water supply of more than 900<span>cities and communities throughout the world.</span>
+                          </p>
+                              <button>About Us</button>
+                  </div>
+              </section>
+              <section class="video">
+                  <iframe class='video-player' src="https://player.vimeo.com/video/183929811?h=46d7273d42&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </section>
+          
+          
+          
+              <!-- footer section  muhammad footer section  muhammad footer section  muhammad section-->
+              <section class="enter-email">
+                <h2>Stay in the know. Sign up for our newsletter</h2>
+                <input type="email" id="emails" name="emails" placeholder="enter your email">
+                <button class="submit-btn">Submit</button>
+              </section>
+              <div class="contact-con">
+                <section class="contact-location">
+                  <div class='contact-us'>
+                    <h2>READY TO SPEC VULCAN <br> FOR YOUR PROJECT?</h2>
+                    <button><a class="contact-us-link" href=" mailto:#">Contact Us</a></button>
+                  </div>
+                  <div class="map-with-text">
+                    <div class="map-img">
+                      <img src="images/map.jpg" alt="map for finding location near you">
+                      <div class="map-text">
+            
+                        <h2>INSTALLED IN  <br> A CITY NEAR YOU</h2>
+                        <button>Find a Vulcan Install</button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+            
+                <img class="img-wave" src=".//images/wave-blue-light.png" alt="wave" />
+            
+              </div>
+              <footer class="site-footer">
+            
+                <div class="favicon-div">
+            
+                  <img class="favicon" src="images/logo-white-vulcan.svg" alt="vulcan logo">
+                </div>
+                <div class="footer-links">
+                  <div>
+                    <img src="images/icon-white-facebook.png" alt="facebook logo">
+                    <img src="images/icon-white-linkedin.png" alt="linkedin logo">
+                  </div>
+            
+                  <div class="contacts">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z" />
+                    </svg>
+                    <p style="color: white;">+1 712-642-2755</p>
+                  </div>
+            
+                  <div class="contacts">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        d="M12 2.02c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 12.55l-5.992-4.57h11.983l-5.991 4.57zm0 1.288l-6-4.629v6.771h12v-6.771l-6 4.629z" />
+                    </svg>
+                    <p style="color: white;">Contact Us</p>
+                  </div>
+                  <p style="color: white;">CopyRight 2017. All Rights Reserved</p>
+                </div>
+              </footer>
+
+
+
+
+
+
+
+        </main>
+
+    </div>
+    <script src="scripts/dropdown-menu.js"></script>
+    <script src="scripts/slideshow.js"></script>
+</body>
+
+</html>

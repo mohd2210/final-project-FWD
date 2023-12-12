@@ -1,0 +1,18 @@
+@use 'variables' as *; 
+
+nav {
+
+    ul {
+        padding: $no-padding; 
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+}

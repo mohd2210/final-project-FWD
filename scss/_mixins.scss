@@ -1,0 +1,18 @@
+//Layout Mixins 
+
+//Center Elements in a flex container 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+//Create a Flex Row 
+//with even spacing between elements
+@mixin flex-layout-row {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
