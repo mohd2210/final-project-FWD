@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/my-styles.css">
+    
+    <!-- latisha css -->
+    <link rel="stylesheet" href="styles/styling.css">
 
     <!-- brandon and muhammad css -->
     <link rel="stylesheet" href="styles/bandon-muhammad.css">
@@ -17,152 +20,166 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
+<!-- latisha's section  -->
 <body>
+  <div class="site-wrapper">
 
-    <div class="site-wrapper">
-
-        <header>
-             <a class="logo" href="#0"><img src="images/logo-white-vulcan.svg" alt="vulcan: the proven screen choice"></a>
-            <button class="btn-menu" id="'btn-menu">
+    <header>
+        <div class="logo-nav">
+            <a class="logo" href="#0"><img src="images/logo-white-vulcan.svg" alt="vulcan: the proven screen choice"></a>
+            <button class="btn-menu" id="btn-menu">
                 <span class="button-content" tabindex="-1">
                     <span class="text">Menu</span>
                     <span class="bar" id="bar"></span>
                 </span>
             </button>
-            <!-- Mobile Nav -->
-            <nav id="mobile-nav">
-                <ul>
-                    <li><a href="#0">About</a></li>
-                    <li><a href="#0">Products</a></li>
-                    <li><a href="#0">Services</a></li>
-                    <li><a href="#0">Parts</a></li>
-                    <li><a href="#0">News</a></li>
-                    <li><a href="#0">Contact</a></li>
-                    <li><a href="#0">Install Map</a></li>
-					<li><a href="#0">Product Literature</a></li>
-                </ul>
-            </nav>
-            <!-- Desktop & Tablet Nav -->
-            <nav class="row-nav">
-                <ul>
-                    <li><a href="#0">About</a></li>
-                    <li><a href="#0">Products</a></li>
-                    <li><a href="#0">Services</a></li>
-                    <li><a href="#0">Parts</a></li>
-                    <li><a href="#0">News</a></li>
-                    <li><a href="#0">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        </div>
 
-        <!-- Top Opts -->
-        <span id="top-opts">
-            <a href="#">Install Map</a>
-            <a href="#">Product Literature</a>
-            <a href="#" class="move">+1 712-642-2755</a>
-            <a href="#" class="move">Contact Us</a>
-        </span>
+        <!-- Mobile Nav -->
+        <nav id="mobile-nav">
+            <ul>
+                <li><a href="#0">About</a></li>
+                <li><a href="#0">Products</a></li>
+                <li><a href="#0">Services</a></li>
+                <li><a href="#0">Parts</a></li>
+                <li><a href="#0">News</a></li>
+                <li><a href="#0">Contact</a></li>
+                <li><a href="#0">Install Map</a></li>
+      <li><a href="#0">Product Literature</a></li>
+            </ul>
+        </nav>
+        <!-- Desktop & Tablet Nav -->
+        <nav class="row-nav">
+            <ul>
+                <li><a href="#0">About</a></li>
+                <li><a href="#0">Products</a></li>
+                <li><a href="#0">Services</a></li>
+                <li><a href="#0">Parts</a></li>
+                <li><a href="#0">News</a></li>
+                <li><a href="#0">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Slideshow Banner-->
-        <section class="slideshow-banner">
+    <!-- Top Opts -->
+    <span id="left-opts">
+        <a href="#">Install Map</a>
+        <a href="#">Product Literature</a>
+    </span>
+
+    <span id="right-opts">
+        <i class="phone-icon"><img src="images/phone-solid.svg" alt="phone-icon"></i>
+        <a href="#">+1 712-642-2755</a>
+        <i class="contact-icon"><img src="images/envelope-solid.svg" alt="mailing envelope"></i>
+        <a href="#">Contact Us</a>
+    </span>
+
+    <!-- Slideshow Banner-->
+    <section class="slideshow-banner">
+        <div class="banner-text">
             <h1>We design and fabricate indestructible wastewater screens. Enough said.</h1>
             <div class="banner-links">
-                <a href="#">View Products</a>
-                <a href="#">View Services</a>
+                <a class="view-products" href="#">View Products</a>
+                <a class="view-services" href="#">View Services</a>
+            </div>
+            <!-- circles -->
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div> 
+        </div>
+
+        <div class="slideshow-container">
+            <!-- images -->
+            <div class="slideshow fade">
+                <img src="images/header-slider-img-01.jpg" alt="machinery">
+            </div>
+            <div class="slideshow fade">
+                <img src="images/header-slider-img-02.jpg" alt="person wearing a welding mask">
+            </div>
+            <div class="slideshow fade">
+                <img src="images/header-slider-img-03.jpg" alt="two people working on metal">
+            </div>
+            <!-- Tutorial
+            www.w3schools.com/howto/howto_js_slideshow.asp -->
+        </div>
+
+    </section>
+
+    <main class="site-main">
+
+        <!-- Customized Per Order - Section -->
+        <section class="customized-section">
+
+            <!-- <img class="white-wave" src="images/wave-white.png" alt="white wave"> -->
+
+            <div class="per-order">
+                <h2>Customized Per Order</h2>
+                <p>Just as no two treatment plants are the same, no two of our screening, grit handling or sludge thickening products are either. We'll help determine exactly what you need.</p>
             </div>
 
-            <div class="slideshow-container">
-                <!-- images -->
-                <div class="slideshow fade">
-                    <img src="images/header-slider-img-01.jpg" alt="machinery">
-                </div>
-                <div class="slideshow fade">
-                    <img src="images/header-slider-img-02.jpg" alt="person wearing a welding mask">
-                </div>
-                <div class="slideshow fade">
-                    <img src="images/header-slider-img-03.jpg" alt="two people working on metal">
-                </div>
-                <!-- Tutorial
-                www.w3schools.com/howto/howto_js_slideshow.asp -->
-                <!-- circles -->
-                <div class="dots">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
+            <div class="customized-wrapper">
+
+                <article class="product">
+                    <img class="product-image" 
+                            src="images/machine-01-300x274.png" 
+                            alt="Screening Machinery"
+                            srcset="images/machine-01-912x834.png 912w,
+                                    images/machine-01-768x702.png 768w,
+                                    images/machine-01-300x274.png 300w"
+                            sizes="(max-width: 560px) calc(50vw - 10px),
+                                    (max-width: 1024px) calc(25vw - 10px), 300px">
+                    <h3 class="product-name">Screening</h3>
+                    <a class="product-link" href="#">View Selection</a>
+                </article>
+
+                <article class="product">
+                    <img class="product-image" 
+                            src="images/machine-02-300x274.png" 
+                            alt="Screenings Handling Machinery"
+                            srcset="images/machine-02-912x834.png 912w,
+                                    images/machine-02-768x702.png 768w,
+                                    images/machine-02-300x274.png 300w"
+                            sizes="(max-width: 560px) calc(50vw - 10px),
+                                    (max-width: 1024px) calc(25vw - 10px), 300px">
+                    <h3 class="product-name">Screenings Handling</h3>
+                    <a class="product-link" href="#">View Selection</a>
+                </article>
+
+                <article class="product">
+                    <img class="product-image" 
+                            src="images/machine-03-300x274.png" 
+                            alt="Grit Handling Machinery"
+                            srcset="images/machine-03-912x834.png 912w,
+                                    images/machine-03-768x702.png 768w,
+                                    images/machine-03-300x274.png 300w"
+                            sizes="(max-width: 560px) calc(50vw - 10px),
+                                    (max-width: 1024px) calc(25vw - 10px), 300px">
+                    <h3 class="product-name">Grit Handling</h3>
+                    <a class="product-link" href="#">View Selection</a>
+                </article>
+
+                <article class="product">
+                    <img class="product-image" 
+                            src="images/machine-04-300x274.png" 
+                            alt="Sludge Thickening Machinery"
+                            srcset="images/machine-04-912x834.png 912w,
+                                    images/machine-04-768x702.png 768w,
+                                    images/machine-04-300x274.png 300w"
+                            sizes="(max-width: 560px) calc(50vw - 10px),
+                                    (max-width: 1024px) calc(25vw - 10px), 300px">
+                    <h3 class="product-name">Sludge Thickening</h3>
+                    <a class="product-link" href="#">View Selection</a>
+                </article>
+
             </div>
 
         </section>
 
-        <main class="site-main">
+    </main>
 
-            <!-- Customized Per Order - Section -->
-            <section class="customized-section">
-
-                <img src="images/wave-white.png" alt="white wave">
-
-                <div class="per-order">
-                    <h2>Customized Per Order</h2>
-                    <p>Just as no two treatment plants are the same, no two of our screening, grit handling or sludge thickening products are either. We'll help determine exactly what you need.</p>
-                </div>
-
-                <div class="customized-wrapper">
-
-                    <article class="product">
-                        <img class="product-image" 
-                                src="images/machine-01-300x274.png" 
-                                alt="Screening Machinery"
-                                srcset="images/machine-01-912x834.png 912w,
-                                        images/machine-01-768x702.png 768w,
-                                        images/machine-01-300x274.png 300w"
-                                sizes="(max-width: 500px) calc(50vw - 10px),
-                                        (max-width: 1024px) calc(25vw - 10px), 300px">
-                        <h3 class="product-name">Screening</h3>
-                        <a class="product-link" href="#">View Selection</a>
-                    </article>
-
-                    <article class="product">
-                        <img class="product-image" 
-                                src="images/machine-02-300x274.png" 
-                                alt="Screenings Handling Machinery"
-                                srcset="images/machine-02-912x834.png 912w,
-                                        images/machine-02-768x702.png 768w,
-                                        images/machine-02-300x274.png 300w"
-                                sizes="(max-width: 500px) calc(50vw - 10px),
-                                        (max-width: 1024px) calc(25vw - 10px), 300px">
-                        <h3 class="product-name">Screenings Handling</h3>
-                        <a class="product-link" href="#">View Selection</a>
-                    </article>
-
-                    <article class="product">
-                        <img class="product-image" 
-                                src="images/machine-03-300x274.png" 
-                                alt="Grit Handling Machinery"
-                                srcset="images/machine-03-912x834.png 912w,
-                                        images/machine-03-768x702.png 768w,
-                                        images/machine-03-300x274.png 300w"
-                                sizes="(max-width: 500px) calc(50vw - 10px),
-                                        (max-width: 1024px) calc(25vw - 10px), 300px">
-                        <h3 class="product-name">Grit Handling</h3>
-                        <a class="product-link" href="#">View Selection</a>
-                    </article>
-
-                    <article class="product">
-                        <img class="product-image" 
-                                src="images/machine-04-300x274.png" 
-                                alt="Sludge Thickening Machinery"
-                                srcset="images/machine-04-912x834.png 912w,
-                                        images/machine-04-768x702.png 768w,
-                                        images/machine-04-300x274.png 300w"
-                                sizes="(max-width: 500px) calc(50vw - 10px),
-                                        (max-width: 1024px) calc(25vw - 10px), 300px">
-                        <h3 class="product-name">Sludge Thickening</h3>
-                        <a class="product-link" href="#">View Selection</a>
-                    </article>
-
-                </div>
-
-            </section>
+</div>
 <!-- brandons section brandons section brandons section brandons section  -->
             <div class="site-wrapper">
                 <section class="product-selection">
