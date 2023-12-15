@@ -1,0 +1,167 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+
+/* footer section muhammad section footer section muhammad section  footer section muhammad section  */
+
+.enter-email {
+    @include content-center(row, center, center);
+    padding: 10px;
+    gap: 20px;
+    background-color: $brand-color;
+  }
+  .enter-email h2 {
+    @include responsive-font(2rem, 1.7rem, 1.4rem);
+    color: #154a66;
+  }
+  
+  .contact-location {
+    @include grid-layout(50% 50%, auto);
+  }
+  
+ .map-with-text{
+    @include map-with-text;
+ }
+  
+  button {
+    background-color: #009ddc;
+    border: none;
+    color: $brand-color-2;
+    padding: 8px;
+  }
+  
+  h2 {
+    color: $brand-color-2;
+  }
+  
+  .map-text h2 {
+    font-size: 2rem;
+    color: black;
+  }
+  .contact-us h2 {
+    font-size: 2rem;
+  }
+  .contact-us-link {
+    text-decoration: none;
+    color:$brand-color-2;
+  }
+  
+  .site-footer {
+    align-items: end;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-links {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .enter-email h2 {
+    margin: 0px;
+  }
+  
+  .contact-us {
+    @include contact-us-style;
+  }
+  
+  .img-wave {
+    position: absolute;
+    bottom: 0%;
+  }
+  
+  .contact-con {
+    position: relative;
+  }
+  
+  .favicon {
+    max-width: 150px;
+  }
+  
+  .footer-links img {
+    max-width: 27px;
+  }
+  
+  .favicon-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .site-footer {
+  @include site-footer-grid
+  }
+  .contacts {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .submit-btn {
+    padding: 3px 39px 3px 39px;
+  }
+  input {
+    padding-left: 8px;
+    width: 25%;
+  }
+  .map-img img {
+    height: 100%;
+  }
+  
+  /* ------------------------------TABLET-SIZE------------------------------------- */
+  @media (max-width: 1024px) {
+    // .enter-email h2 {
+    //   font-size: 1.4rem;
+    //   margin: 0px;
+    // }
+    .contact-us h2 {
+      font-size: 1.7rem;
+    }
+  
+    .map-text h2 {
+      font-size: 1.7rem;
+    }
+  
+    .footer-links {
+      flex-wrap: wrap;
+    }
+    .footer-links p {
+      margin: 0rem;
+    }
+    .map-img img {
+      height: 320px;
+    }
+  }
+  /* --------------------------------------------MOBILE-SIZE--------------------------------------------- */
+  @media (max-width: 460px) {
+    input {
+      padding-left: 8px;
+      width: 61%;
+    }
+    .enter-email {
+      flex-wrap: wrap;
+    }
+    .submit-btn {
+      padding: 3px 25px 3px 25px;
+    }
+    .contact-location {
+        @include footer-grid;
+    }
+    .map-with-text {
+      grid-row: 1/2;
+    }
+    .site-footer {
+        @include footer-grid;
+    }
+    .contact-us button {
+      border: $brand-color-2 solid 2px;
+      background-color: transparent;
+    }
+    .map-text button {
+      background-color: transparent;
+      color: black;
+      border: black solid 2px;
+    }
+  }
