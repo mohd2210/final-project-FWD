@@ -1,0 +1,102 @@
+@use 'variables' as *; 
+
+/* Customized Order */
+
+.customized-section {
+    padding: 20px;
+    z-index: 11;
+    position: relative;
+}
+
+.customized-section:before, 
+    .order-block:after {
+        content: "";
+        position: absolute;
+        left: -60px;
+        top: -62px;
+        right: 0;
+        z-index: 10;
+        height: 166px;
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-image: url("../images/wave-white.png");
+}
+
+.per-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.per-order h2 {
+    max-width: 100px;
+    font-weight: lighter;
+    align-self: center;
+}
+
+.per-order p {
+    max-width: 300px;
+    align-self: center;
+}
+
+.customized-wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product {
+    display: flex;
+    padding: 20px 0px;
+    padding-left: 50px;
+    border-bottom: lightgrey solid 2px;
+}
+
+.product-name {
+    font-size: larger;
+    align-self: center;
+    max-width: 100px;
+    margin-left: 20px;
+}
+
+.product-link {
+    display: none;
+}
+
+@media (min-width: 560px) {
+
+	.per-order h2 {
+        max-width: 400px;
+        align-self: center;
+    }
+    
+    .per-order p {
+        max-width: 725px;
+        align-self: center;
+    }
+
+    .customized-wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .product {
+        flex-direction: column;
+        border-bottom: 2px;
+        padding: 10px;
+    }
+    
+    .product-name {
+        color: $brand-color;
+        font-size: larger;
+        text-align: center;
+        max-width: 100px;
+    }
+    
+    .product-link {
+        color: $color;
+        text-align: center;
+        display: block;
+    }
+}
