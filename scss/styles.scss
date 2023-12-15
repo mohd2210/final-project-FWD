@@ -14,3 +14,24 @@
 @use 'main'; 
 @use 'slideshow'; 
 @use 'customized-order'; 
+@use 'variables'; 
+
+//Resets and Defaults
+
+@use 'links';
+
+
+//Site Sections 
+
+
+
+ 
+
+// brandon's section
+@use 'normalize-fwd';
+@use 'main'; 
+// @use 'footer'; //this is so my elements line up will delete afterwards
+
+//muhammad section
+@use 'footer';
+@use 'mixins';
