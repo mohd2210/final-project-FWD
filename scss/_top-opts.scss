@@ -1,0 +1,45 @@
+@use 'variables' as *; 
+
+/* Top Opts */
+
+#left-opts a,
+#right-opts a,
+.phone-icon,
+.contact-icon {
+    display: none; 
+}
+
+@media (min-width: 560px) {
+
+    #left-opts,
+    #right-opts {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top: 0px;
+    }
+
+	#left-opts a,
+    #right-opts a {
+        color: $text;
+		display: block;
+        text-decoration: none;
+        padding: 10px;
+	}
+
+    #right-opts {
+        right: 0px; 
+    }
+
+    .phone-icon,
+    .contact-icon {
+        display: block;
+        background-color: $text;
+        border-radius: 50%;
+        max-height: 20px;
+        padding: 2px;
+        margin-top: 8px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
