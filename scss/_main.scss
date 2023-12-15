@@ -48,13 +48,12 @@
     padding-bottom: 1rem;
     margin-top: -1.5rem;
  }
-// Mobile "Find Your Project's Perfect Fit" size change
+// Tablet "Find Your Project's Perfect Fit" size change
 @media (max-width: 1024px) {
     .product-selection p {
         font-size: 3rem;
 }
 }
-
 
 // Mobile "Find Your Project's Perfect Fit" size change
 @media (max-width: 560px) {
@@ -197,7 +196,7 @@ background-position: right center;
 .about-us button {
     @include about-us-button;
     //positioning
-    transform: translateY(-600%); 
+    transform: translateY(-565%); 
     width: 10%;
     font-size: 12px;
     padding: 10px 10px;
