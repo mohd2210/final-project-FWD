@@ -6,7 +6,6 @@
 /* footer section muhammad section footer section muhammad section  footer section muhammad section  */
 
 .enter-email {
-  flex-wrap: wrap;
     @include content-center(row, center, center);
     padding: 10px;
     gap: 20px;
@@ -22,8 +21,7 @@
   }
   
  .map-with-text{
-    @include map-text;
-    @include map-img
+    @include map-with-text;
  }
   
   button {

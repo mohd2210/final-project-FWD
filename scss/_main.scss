@@ -1,0 +1,376 @@
+@use "sass:math";
+
+// Mixins
+@use "variables" as *;
+@use "mixins" as *;
+
+// body for brandons section
+
+
+//Styles For Selecting Product
+
+
+.site-wrapper{  // change this somewhere else after?
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  .dark-wave {
+    background-color: $brand-color-2;
+    
+  }
+
+.back-ground-dark-blue{
+    background-color: $bgc-2
+}
+
+
+
+.product-selection h2, p {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.product-selection h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $brand-color-2;
+    font-size: 3rem;
+    
+}
+
+.product-selection p {
+    color: $brand-color;
+    font-weight: 100;
+    font-size: 1.5rem;
+    border-bottom: $bottom-border;
+    padding-bottom: 1rem;
+    margin-top: -1.5rem;
+ }
+// Mobile "Find Your Project's Perfect Fit" size change
+@media (max-width: 1024px) {
+    .product-selection p {
+        font-size: 3rem;
+}
+}
+
+
+// Mobile "Find Your Project's Perfect Fit" size change
+@media (max-width: 560px) {
+    .product-selection p {
+        font-size: 1.5rem;
+}
+}
+
+
+// Mobile "Find Your Project's Perfect Fit" Text color change
+@media (max-width: 440px) {
+    .product-selection p {
+        color: $brand-color-2;
+        font-size: 1rem;
+}
+    .product-selection h2 {
+        font-size: 2rem;
+    }
+}
+
+ .product-type select:focus
+{
+  background-color: whitesmoke;
+  outline: none;
+}
+
+
+.product-type select {
+appearance: none; /* Disable default appearance */
+-webkit-appearance: none; /* For Safari and Chrome */
+
+/* Custom arrow image or content */
+background-image: url('../images/blue-arrow.png');
+background-position: right center;
+ background-repeat: no-repeat;
+}
+
+
+
+.product-selection button {
+    @include find-my-product-button;
+    width: 87.7%;
+}
+
+.master-type{
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+.product-type {
+    display: inline-block;
+    padding-bottom: 2rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    width: 17%;
+    text-transform: uppercase;
+}
+
+.product-type label {
+    display:block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: $brand-color-2
+}
+
+.product-type select {
+    display: block;
+    width: 100%;
+    background-color: $bgc-3;
+    border: 0;
+    height: 2.5rem;
+    padding-left: 1rem;
+}
+
+/* tablet button hidden on desktop */
+.button-find {
+    display: none;
+}
+
+
+/* Tablet size for selection */
+
+@media (max-width: 1024px) 
+    {
+        .master-type{
+            @include tablet-selection;
+        }
+
+        .product-type {
+            width: 90%;
+            text-transform: $capital;
+        }
+
+        .product-selection button {
+            display: none;
+        }
+
+        .button-find{
+            @include find-my-product-button;
+            width: 95%;
+        }
+        .button-background {
+            background-color: $bgc-2;
+            padding-bottom: 3rem;
+
+        }
+    }
+
+     /* mobile display */
+     @media (max-width: 430px) { 
+        @include mobile-selection;
+    }
+
+    //Styles for Delivering Clean Water Text and Background Image
+
+.about-us h2 {
+    @include about-us-text;
+    transform: translateY(-425px); 
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about-us h2 span {
+    @include about-us-text;
+    transform: translateY(5%);
+    
+}
+
+.desktop-about-us {
+    @include about-us-text;
+    transform: translateY(-300px); 
+}
+
+.desktop-about-us span {
+    @include about-us-text;
+}
+
+.about-us button {
+    @include about-us-button;
+    //positioning
+    transform: translateY(-600%); 
+    width: 10%;
+    font-size: 12px;
+    padding: 10px 10px;
+ }
+
+
+ /* removes a small white line */
+.about-us {
+    background-color: $brand-color;
+}
+
+/* moving h2 p and button all at ounce */
+.about-info {
+    transform: translateY(50px); 
+
+}
+
+// hides unneeded h2,h3,h4,p, button for tablet and mobile version
+@include hide-text;
+
+
+/* Tablet Size Resolution
+
+
+/* fixes position before entering tablet resolution */
+@media (max-width: 1350px) 
+    {
+        .about-info {
+            transform: translateY(150px); 
+        }
+    }
+
+/* tablet resolution */
+@media (max-width: 1024px) 
+    {
+    .about-us img {
+        display: block;
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+        }
+    @include hide-text-tablet;
+    }
+
+    .h3-tablet {
+        @include about-us-text;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        transform: translateY(-440px); 
+    }
+    .h3-tablet span{
+        @include about-us-text;
+    }
+
+
+    //tablet paragraph for about us 
+        .tablet-about-us{
+            @include about-us-text;
+            transform: translateY(-300px); 
+        }
+
+        .tablet-about-us span {
+            @include about-us-text;
+         }
+         .tablet-about-us span:last-child {
+            transform: translateY(100%); 
+          }
+         
+
+    
+          @media (max-width: 730px) {
+            .about-us button {
+                width: 20%;
+    
+            }
+        }
+
+    
+        // Mobile Display
+    
+        @media (max-width: 440px) {
+            .tablet-version {
+                display: none;
+            }
+            .mobile-about-us{
+                display: block;
+            }
+    
+            .h4-mobile{
+                @include about-us-text;
+                @include mobile-text;
+                 bottom: 25rem;
+                 
+            }
+            .h4-mobile-2{
+                @include about-us-text;
+                @include mobile-text;
+                 bottom: 22.5rem;
+            }
+    
+            .h4-mobile-3{
+                @include about-us-text;
+                @include mobile-text;
+                bottom: 20rem;
+            }
+
+        .p-mobile-all{
+            @include about-us-text;
+            transform: translateY(-335px); 
+                 
+        }
+        @include mobile-text-p-position;
+        
+        .about-us button {
+            font-size: 12px;
+            padding: 8px 8px;
+            width: 30%;
+            transform: translateY(-595%);
+        }
+    }
+    
+
+    
+// Video Section
+
+//Desktop Display
+
+.video {
+    background-color: $brand-color;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.video-player{
+    
+    border-right: 1px solid #1f7e5b; 
+    border-top: 7px solid #1f7e5b;
+    border-bottom: 7px solid #1f7e5b;
+    box-shadow: 0 0 0 10px rgb(35, 66, 91);
+    width: 620px;
+}
+
+/* TABLET SIZE TABLET SIZE TABLET SIZE TABLET SIZE TABLET SIZE TABLET SIZE TABLET SIZE TABLET SIZE*/
+@media (max-width: 1024px) 
+    {
+        .video-player{
+            border-top: 4px solid #1f7e5b;
+            border-bottom: 4px solid #1f7e5b;
+            box-shadow: 0 0 0 15px rgb(35, 66, 91);
+            border-right: 0px solid #1f7e5b; 
+            
+        }
+    }
+
+    /* MOBILE MOBILE */
+    @media (max-width: 660px) 
+    {
+        .video-player{
+           width: 290px;
+           height: auto;
+
+           /* border reset */
+            border-top: 0px solid #1f7e5b;
+            border-bottom: 0px solid #1f7e5b;
+            
+            
+            box-shadow: 0 0 0 20px rgb(35, 66, 91);
+            border-right: 10px solid #1f7e5b;
+            border-left: 10px solid #1f7e5b;
+        }
+    }
+
+
+

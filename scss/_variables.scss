@@ -1,8 +1,11 @@
-//Colors 
-$brand-color: lightskyblue; 
+// /* Variables */ 
+
+// //Colors 
+$brand-color: #03a9f4; 
 $bgc: blue; 
 
-//Text Colors 
+// //Text Colors 
+$text: white; 
 $color: black;
 $hover: grey; 
 
@@ -14,5 +17,49 @@ $heading-font: 'Roboto Condensed', 'Times New Roman', Times, serif, "Helvetica N
 $line-height: 1.5; 
 
 //Layout variables
+$padding: 20px; 
+$no-padding: 0px; 
+
+//Colors 
+$brand-color: lightskyblue; 
+$bgc: blue; 
+
+
+
+
+//Text Colors 
+$color: black;
+$hover: grey; 
+
+// Fonts
+$body-font: 'Roboto Condensed', 'Times New Roman', Times, serif, "Helvetica Neue", Helvetica, sans-serif;
+$heading-font: 'Roboto Condensed', 'Times New Roman', Times, serif, "Helvetica Neue", Helvetica, sans-serif;
+
+
+
+// Typographic Defaults 
+$line-height: 1.5; 
+
+//Layout variables
 $padding: 30px; 
 $no-padding: 0px; 
+
+
+
+//brandons section for main
+
+//borders
+$bottom-border: 1px solid rgb(255, 255, 255); 
+
+
+//color
+$brand-color-2: white;
+$bgc-2 :#154a66;
+$bgc-3: lightgray;
+
+
+//font
+$font-weight-700: '700';
+$text-uppercase: 'uppercase';
+$capital: 'capitalize';
+ 
