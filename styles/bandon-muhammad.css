@@ -256,23 +256,7 @@ p {
 
 .about-us button {
   /* positioning */
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  position: absolute;
-  transform: translateY(-600%);
-  display: block;
-  /* styling button */
-  border-style: none;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 12px;
-  width: 10%;
-  padding: 10px 10px;
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
+  
 }
 
 /* removes a small white line */
