@@ -1,4 +1,6 @@
 //Layout Mixins 
+@use "sass:math";
+@use "variables" as *;
 
 //Center Elements in a flex container 
 @mixin flex-center {
@@ -16,3 +18,142 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+
+
+//brandon section
+
+//Styles For Selecting Product
+
+//style for buttons
+@mixin find-my-product-button{
+    color: '$brand-color-2';
+    background-color: '$brand-color';
+    border-color: '$brand-color';
+    border-style: none;
+    display: block;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+//tablet style for selection
+@mixin tablet-selection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-bottom: -2rem;
+}
+
+//mobile display for selection
+@mixin mobile-selection{
+    .master-type{
+        display: block;
+    }
+
+    .product-type {
+        width:70%;
+    }
+    .button-find {
+        width: 70%;
+    }
+}
+
+// h2,h3,h4,p about us text style format
+@mixin about-us-text{
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: block;
+    text-align: center;
+    z-index: 1;
+    color: $brand-color-2;
+    
+}
+
+// about is button
+@mixin about-us-button{
+     /* positioning */
+     margin: 0 auto;
+     left: 0;
+     right: 0;
+     position: absolute;
+     display: block;
+     /* styling button */
+     border-style: none;
+     text-transform: uppercase;
+     text-align: center;
+     font-size: 12px;
+     padding: 10px 10px;
+     cursor: pointer;
+     background-color: transparent;
+     color: white;
+     border: $bottom-border;
+}
+
+// hides unneeded h2,h3,h4,p, button for tablet and mobile version
+@mixin hide-text{
+    .h3-tablet{
+        display: none;
+    }
+    
+    .h3-tablet span{
+        display: none;
+    }
+    
+    .tablet-version{
+        display: none;
+    }
+    
+    
+    .mobile-about-us{
+        display: none;
+    }
+    .p-mobile-all {
+        display: none;
+    }
+}
+
+@mixin hide-text-tablet {
+    .about-us h2 span {
+        display: none; 
+    }
+
+    .about-us h2 {
+        display: none;
+    }
+    .desktop-about-us {
+        display: none;
+    }
+    .tablet-version{
+        display: block;
+    }
+}
+
+@mixin mobile-text{
+    font-size: 1.85rem;
+    text-transform: uppercase;
+}
+
+@mixin mobile-text-p-position{
+    .p-mobile-2{
+        transform: translateY(-1rem);
+    }
+    .p-mobile-3{
+        transform: translateY(-2rem);
+    }
+    .p-mobile-4 {
+        transform: translateY(-3rem);
+    }
+    .p-mobile-5 {
+        transform: translateY(-4rem);
+    }
+}
+
+
+
+ 

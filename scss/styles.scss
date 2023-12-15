@@ -8,9 +8,15 @@
 @use 'typography'; 
 @use 'links';
 
+
 //Site Sections 
 @use 'header'; 
 @use 'nav'; 
 @use 'main'; 
 @use 'slideshow'; 
 @use 'customized-order'; 
+
+// brandon's section
+@use 'normalize-fwd';
+// @use 'footer-1'; //this is so my elements line up will delete afterwards
+
