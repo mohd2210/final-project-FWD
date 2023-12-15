@@ -1,0 +1,32 @@
+@use 'variables' as *; 
+
+/* Mobile Nav */
+
+#mobile-nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-right: 0;
+}
+
+#mobile-nav.activated {
+    transition: height 0.3s ease, visibility 0s 0.3s;
+}
+
+.show #mobile-nav {
+    transition: height 0.3s ease, visibility 0s;
+    visibility: visible;
+    height: fit-content;
+    position: absolute;
+    top: 63px; 
+}
+
+#mobile-nav a:hover {
+    outline: none;
+    background-color: $brand-color;
+}
+
+@media (min-width: 560px){
+
+    .mobile-nav {
+        display: none;
+    }
+}
