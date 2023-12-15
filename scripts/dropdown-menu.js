@@ -11,13 +11,28 @@ const nav = document.getElementById('mobile-nav');
 
 btnMenu.addEventListener('click', openMenu);
 // Prevents the focus state from activating
-btnMenu.addEventListener('mousedown', function(e){
-    e.preventDefault();
-});
+// btnMenu.addEventListener('mousedown', function(e){
+   //e.preventDefault();
+// });
 
 function openMenu(){
     body.classList.toggle('show');
 	nav.classList.add('activated');
+
+	document.addEventListener('click', closeMenuOutsideClick);
+}
+
+//Close Menu if the user clicks outside the dropdown
+function closeMenuOutsideClick(e) {
+	const clickInsideMenu = nav.contains(e.target);
+	const clickOnButton = btnMenu.contains(e.target); 
+
+	if(!clickInsideMenu && !clickOnButton) {
+		body.classList.remove('show');
+		nav.classList.remove('activated'); 
+		//Remove event listener after closing menu 
+		document.removeEventListener('click', closeMenuOutsideClick);
+	}
 }
 
 // Media Query Event Listener
