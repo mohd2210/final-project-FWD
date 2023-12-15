@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vulcan</title>
-    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/my-styles.css">
 
     <!-- brandon and muhammad css -->
     <link rel="stylesheet" href="styles/bandon-muhammad.css">
+
+    <!-- scss css file -->
+    <link rel="stylesheet" href="styles/styles.css">
 
     
     <!-- custom font -->
@@ -156,8 +158,7 @@
                                         images/machine-04-300x274.png 300w"
                                 sizes="(max-width: 500px) calc(50vw - 10px),
                                         (max-width: 1024px) calc(25vw - 10px), 300px">
-                        <h3 class="product-name">Sludge Thickening</h3>
-                        <a class="product-link" href="#">View Selection</a>
+                        <h3 class="product-name">Sludge Thickening< tion</a>
                     </article>
 
                 </div>
@@ -167,8 +168,8 @@
             <div class="site-wrapper">
                 <section class="product-selection">
                   <div class="back-ground-dark-blue">
+                    <img class= 'dark-wave' src="./images/wave-blue-dark.png" alt="blue wave design for products">
                       <h2>Product Advisor</h2>
-                      <img class= 'dark-wave' src="./images/wave-blue-dark.png" alt="blue wave design for products">
                           <p>Find your project's perfect fit</p>
           
                       <div class="master-type">
@@ -293,9 +294,30 @@
                   <img src="images/bg-section-about-us.jpg" alt="about us section delivering clean waters since 1975">
                   <div class ='about-info'>
                       <h2>Delivering Clean, Safe Water <span>Since 1975. Refreshing Indeed.</span></h2>
-          
-                          <p>Vulcan wastewater screening equipment has played a vital role in protecting the water supply of more than 900<span>cities and communities throughout the world.</span>
+
+                        <div class='tablet-version'>
+                            <h3 class="h3-tablet">Delivering Clean, Safe Water Since 1975. <span>Refreshing Indeed.</span></h3>
+
+                            <p class="tablet-about-us">Vulcan wastewater screening equipment has played a vital role in <span>protecting the water supply of more than 900 cities and communities</span> <span>throughout the world.</span></p>   
+                        </div>
+
+                        <div class="mobile-about-us">
+                            <h4 class="h4-mobile">Delivering Clean, Safe</h4>
+                            <h4 class="h4-mobile-2">Water Since 1975.</h4>
+                            <h4 class="h4-mobile-3">Refreshing Indeed.</h4>
+                        </div>
+                        
+                        <div class="p-mobile-all">
+                            <p class="p-mobile-1">Vulcan wastewater screening</p>
+                            <p class="p-mobile-2">equipment has played a vital role in </p>
+                            <p class="p-mobile-3">protecting the water supply of more</p>
+                            <p class="p-mobile-4">than 900 cities and communities</p>
+                            <p class="p-mobile-5">throughout the world</p>
+                        </div>
+
+                          <p class="desktop-about-us">Vulcan wastewater screening equipment has played a vital role in protecting the water supply of more than 900<span>cities and communities throughout the world.</span>
                           </p>
+                          
                               <button>About Us</button>
                   </div>
               </section>
